@@ -1,0 +1,26 @@
+[
+    {
+        "id": 1,
+        "address": "12 valley of Kings, Geneva",
+        "country": "Switzerland",
+        "description": "A supe detached victorian prperty",
+        "price": 900000,
+        "photo": "277667"
+    },
+    {
+        "id": 2,
+        "address": "89 Road of Forks, Bern",
+        "country": "Switzerland",
+        "description": "The impressive famuily home",
+        "price": 500000,
+        "photo": "462358"
+    },
+    {
+        "id": 3,
+        "address": "Grote Hoff 2 , Amsterdam",
+        "country": "The Netherlands",
+        "description": "The house has been designed",
+        "price": 500000,
+        "photo": "462334"
+    }
+]
