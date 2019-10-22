@@ -18,7 +18,6 @@ constructor(props) {
 
     render() { 
         const search = this.state.search;
-        const countries = ["Switzerland","The Netherlands"];
         console.log("country list", this.props);
 
         return ( 
