@@ -9,7 +9,8 @@ class App extends Component {
 
 state = {
   subtitle : "Provide houses worldwide",
-  selDesc: "Look for dream house in countries"
+  selDesc: "Look for dream house in countries",
+  countries:[]
 }
 componentDidMount() {
   this.fetchHouses();
@@ -28,8 +29,9 @@ fetchHouses = () => {
 }
 
 determineUniqueCountries = () =>{
-  const countries = [{"name":"Switzerland"}];
-  this.setState({countries});
+  const countries = ["Switzerland","The Netherlands"];
+
+  this.setState({countries})
 }
 
   render() {
