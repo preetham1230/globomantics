@@ -13,6 +13,7 @@ constructor(props) {
     onSearchChange = (e) =>{
 
         const country = e.target.value;
+        this.props.filterHouses(country);
 
     }
 
