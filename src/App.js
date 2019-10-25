@@ -14,7 +14,8 @@ class App extends Component {
 state = {
   subtitle : "Provide houses worldwide",
   selDesc: "Look for dream house in countries",
-  countries:[]
+  countries:[],
+  countriesList : ""
 }
 componentDidMount() {
   this.fetchHouses();
@@ -60,6 +61,10 @@ testData = (
   </Switch>
 )
 
+ countryChanged = (e) => {
+   console.log("country changed",e.target.value);
+   this.setState({countriesList: e.target.value});
+ }
 
   render() {
     
@@ -75,6 +80,13 @@ testData = (
           <FeaturedHouse house = {this.state.featureHouse} />
 
         </div>
+        <select value={this.state.countriesList} onChange={this.countryChanged}>
+          <option value=""></option>
+          <option value="USA">USA</option>
+          <option value="INDIA">INDIA</option>
+          <option value="CANADA">CANADA</option>
+        </select>
+
         {this.testDatafunc()}
         
         <ul>
